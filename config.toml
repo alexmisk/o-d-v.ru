@@ -1,0 +1,39 @@
+baseURL = 'https://o-d-v.ru/'
+languageCode = 'ru-ru'
+title = 'Осторожно, двери восприятия'
+theme = 'PaperMod'
+
+[params]
+  mainSections = ['episodes']
+  dateFormat = '02-01-2006'
+  disableThemeToggle = 'True'
+  defaultTheme = 'auto'
+
+[params.author]
+  name = 'Саша Мискарян и Вася Болдырева'
+  email = 'mail@o-d-v.ru'
+
+[params.podcast]
+  description = 'Подкаст, посвященный электронной музыке различных направлений'
+  tagline = 'Добавляем человечности в музыку для роботов'
+  download_url = 'https://cdn.o-d-v.ru/episodes/'
+  cdn_url = 'https://cdn.o-d-v.ru/'
+  itunes_url = ''
+  itunes_id = ''
+
+[outputs]
+  home = ['HTML', 'RSS', 'mp3feed']
+
+[params.homeInfoParams]
+  Title = '' 
+  Content = ''
+
+[outputFormats]
+  [outputFormats.mp3feed]
+    MediaType = "application/rss+xml"
+    BaseName = "index"
+    path = "/feed/mp3"
+    IsHTML = false
+    IsPlainText = true
+    noUgly = true
+    Rel = "alternate"
