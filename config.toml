@@ -18,8 +18,8 @@ theme = 'PaperMod'
   tagline = 'Добавляем человечности в музыку для роботов'
   download_url = 'https://cdn.o-d-v.ru/episodes/'
   cdn_url = 'https://cdn.o-d-v.ru/'
-  itunes_url = ''
-  itunes_id = ''
+  itunes_url = 'https://podcasts.apple.com/ru/podcast/осторожно-двери-восприятия/id1672845104'
+  itunes_id = '1672845104'
 
 [outputs]
   home = ['HTML', 'RSS', 'mp3feed']

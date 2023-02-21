@@ -37,6 +37,13 @@
   </div>
   {{- end }}
 
+<div class='post_extra mb-2'>
+  <div class="mr-1">
+    {{ partialCached "podcast-subscribe.html" . }}
+  </div>
+</div>
+
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
