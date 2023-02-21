@@ -6,6 +6,14 @@
     <div class="entry-content">
         <img src="https://cdn.o-d-v.ru/images/odv-logo.svg">
         {{ .Content | markdownify }}
+        <p>&laquo;Осторожно, двери восприятия&raquo;&nbsp;&mdash; глоток свежего воздуха в мире безликих диджейских сетов.
+        Слушаем и&nbsp;обсуждаем электронную музыку разных направлений и разных лет.</p> 
+        <br>
+        <p>Подписывайтесь через <a class="link" href="{{ $.Site.Params.podcast.itunes_url }}">Apple Podcasts</a>, 
+        <a class="link" href="https://overcast.fm/itunes{{ $.Site.Params.podcast.itunes_id }}"> Overcast</a> 
+        или просто вставьте <a class="link" href="https://o-d-v.ru/feed/mp3/index.xml">ссылку на RSS-ленту</a> в ваш подкастоприемник :-)</p>
+        <br>
+        <p>Email для фидбека: <a class="link" href='mailto:mail@o-d-v.ru'>mail@o-d-v.ru</a></p>
     </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" site.Params.socialIcons }}
