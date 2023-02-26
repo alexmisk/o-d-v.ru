@@ -19,6 +19,7 @@ theme = 'PaperMod'
   download_url = 'https://cdn.o-d-v.ru/episodes/'
   cdn_url = 'https://cdn.o-d-v.ru/'
   itunes_url = 'https://podcasts.apple.com/ru/podcast/осторожно-двери-восприятия/id1672845104'
+  google_podcasts_url = 'https://podcasts.google.com/feed/aHR0cHM6Ly9vLWQtdi5ydS9mZWVkL21wMy8'
   itunes_id = '1672845104'
 
 [outputs]
