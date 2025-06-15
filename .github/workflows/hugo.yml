@@ -1,10 +1,9 @@
-
 name: Hugo build and deploy
 
 on:
   push:
     branches:
-    - master
+      - master
 
 permissions:
   contents: write
@@ -12,23 +11,23 @@ permissions:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.4.13
-      with:
-        hugo-version: '0.110.0'
-        extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          hugo-version: "0.110.0"
+          extended: true
 
-    - name: Build
-      run: hugo --minify
-    
-    - name: Deploy on GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: public
-        CLEAN: true
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy on GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public
+          CLEAN: true
