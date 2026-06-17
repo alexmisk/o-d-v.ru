@@ -1,16 +1,16 @@
 baseURL = 'https://o-d-v.ru/'
-languageCode = 'ru-ru'
+locale = 'ru-RU'
 title = 'Осторожно, двери восприятия'
 theme = 'PaperMod'
 
 [params]
   mainSections = ['episodes']
   dateFormat = '02-01-2006'
-  disableThemeToggle = 'True'
+  disableThemeToggle = true
   defaultTheme = 'auto'
 
 [params.author]
-  name = 'Саша Мискарян и Вася Болдырева'
+  name = 'Саша Мискарян'
   email = 'mail@o-d-v.ru'
 
 [params.podcast]
